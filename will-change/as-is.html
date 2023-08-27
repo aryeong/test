@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>no-will-change</title>
+  <style>
+    body {margin: 0;}
+    .item-section {display: flex; align-items: center; height: 1000px; padding: 100px 0; background-color: black; border-top: 1px solid #222;}
+    .item-section:first-child {border-top: none;}
+    p {width: 500px; margin: 0 auto; color: #ddd; opacity: 0; transform: translateY(120px);transition: opacity .5s, transform .8s;}
+    p.is-show {opacity: 1; transform: translateY(0);}
+  </style>
+</head>
+<body>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+  <section class="item-section">
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+  </section>
+
+  <script>
+    const sectionDom = document.querySelectorAll('.item-section');
+
+    function scroll() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.screenY;
+
+      sectionDom.forEach(item => {
+        const text = item.querySelector('.text');
+
+        if (scrollTop > item.offsetTop) {
+          text.classList.add('is-show');
+        }
+      });
+
+      requestAnimationFrame(scroll);
+    }
+
+    scroll();
+  </script>
+</body>
+</html>
