@@ -7,43 +7,76 @@
   <title>will-change</title>
   <style>
     body {margin: 0;}
-    .item-section {display: flex; align-items: center; height: 1000px; background-color: black; border-top: 1px solid #222;}
+    .item-section {display: flex; flex-direction: column; justify-content: center; align-items: center; height: 1000px; background-color: black; border-top: 1px solid #222;}
     .item-section:first-child {border-top: none;}
-    p {width: 500px; margin: 0 auto; color: #ddd; opacity: 0; transform: translateY(120px);transition: opacity .5s, transform .8s;}
-    p.is-show {opacity: 1; transform: translateY(0);}
-    p.will-change {will-change: opacity, transform;}
+    img {width: 300px;}
+    p {width: 600px; margin: 0 auto; color: #ddd;}
+
+    .item {opacity: 0; transform: translateY(120px);transition: opacity .5s, transform .8s;}
+    .item.is-show {opacity: 1; transform: translateY(0);}
+    .item.will-change {will-change: opacity, transform;}
   </style>
 </head>
 <body>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-1.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-2.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-3.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-4.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-5.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-6.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-7.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-8.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-9.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
   <section class="item-section">
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    <div class="item">
+      <img src="../img/choonsik-10.jpg" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ipsam totam cum enim neque at corporis! Nulla explicabo ipsum facilis commodi fugiat eius hic, minus similique saepe dolorum nemo aliquam.</p>
+    </div>
   </section>
 
   <script>
@@ -52,14 +85,14 @@
     function scroll() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.screenY;
 
-      sectionDom.forEach(item => {
-        const text = item.querySelector('.text');
+      sectionDom.forEach(section => {
+        const item = section.querySelector('.item');
 
-        if (scrollTop > item.offsetTop) {
-          text.classList.add('is-show');
-          text.classList.remove('will-change');
+        if (scrollTop > section.offsetTop) {
+          item.classList.add('is-show');
+          item.classList.remove('will-change');
         } else if (scrollTop > item.offsetTop - window.innerHeight) {
-          text.classList.add('will-change');
+          item.classList.add('will-change');
         }
       });
 
